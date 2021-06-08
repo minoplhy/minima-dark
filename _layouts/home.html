@@ -30,7 +30,7 @@ layout: default
             {{ post.title | escape }}
           </a>
         </h2>
-        <h4><span class="post-meta">{{ post.date | date: date_format }}</span></h4>
+        <h4><span class="post-meta">{{ post.date | date: date_format }}</span> /// {{ minutes }} minute read</h4>
         {%- if site.show_excerpts -%}
           <blockquote>{{ post.excerpt }}</blockquote>
         {%- endif -%}
