@@ -232,6 +232,15 @@
   color: $brand-color;
 }
 
+.row {
+    @include center(100%);
+      margin: 0px rem($rowMargin);
+      }
+.flex-grid {
+    display: flex;
+   flex-flow: row wrap;
+      }
+
 .post-link {
   display: block;
   @include relative-font-size(1.5);
