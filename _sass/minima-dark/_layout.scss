@@ -234,7 +234,7 @@
 
 .row {
     @include center(100%);
-      margin: 0px rem($rowMargin);
+      margin: 0px rem(50px);
       }
 .flex-grid {
     display: flex;
