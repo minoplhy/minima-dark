@@ -23,6 +23,7 @@ layout: default
     {%- endif -%}
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
+    <article>
       <li>
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">
@@ -34,6 +35,7 @@ layout: default
           <blockquote>{{ post.excerpt }}</blockquote>
         {%- endif -%}
       </li>
+    </article>>
        </div>
               {%- endfor -%}
     {% if site.paginate %}
