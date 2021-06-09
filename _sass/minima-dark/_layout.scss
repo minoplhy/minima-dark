@@ -214,13 +214,16 @@
 }
 
 .post-list {
-  flex: 1 0 200;
-  margin: 0 0 rem(30px);
-  display: inline-block;
-  min-height: rem(285px);
-  transition: all 0.3s;
-  position: relative;
-  z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+&:after {
+    display: block;
+    width: 30%;
+    content: "";
+                          }
 
   > li {
     margin-bottom: $spacing-unit;
