@@ -224,10 +224,15 @@
     width: 30%;
     content: "";
                           }
+  > article {
+      float: left;
+      width: 30%;
+      margin-bottom: 50px;
 
-  > li {
-    margin-bottom: $spacing-unit;
-  }
+      @include media-query($on-small) {
+            width: 100%;
+                           }
+                               }
 }
 
 .post-meta {
