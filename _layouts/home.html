@@ -17,6 +17,7 @@ layout: default
   {% endif %}
 
   {%- if posts.size > 0 -%}
+   <div class="post-list">
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
@@ -33,6 +34,7 @@ layout: default
           <blockquote>{{ post.excerpt }}</blockquote>
         {%- endif -%}
       </li>
+       </div>
               {%- endfor -%}
     {% if site.paginate %}
       <div class="pager">
