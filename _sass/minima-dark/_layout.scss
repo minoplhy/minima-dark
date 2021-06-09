@@ -214,8 +214,13 @@
 }
 
 .post-list {
-  margin-left: 0;
-  list-style: none;
+  flex: 1 0 $itemMinWidth;
+  margin: 0 0 rem(30px);
+  display: inline-block;
+  min-height: rem(285px);
+  transition: all 0.3s;
+  position: relative;
+  z-index: 1;
 
   > li {
     margin-bottom: $spacing-unit;
