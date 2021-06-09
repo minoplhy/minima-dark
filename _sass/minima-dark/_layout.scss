@@ -233,7 +233,7 @@
 }
 
 .row {
-    @include center(100%);
+    @include center;
       margin: 0px rem(50px);
       }
 .flex-grid {
