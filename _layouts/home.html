@@ -16,11 +16,11 @@ layout: default
     {% assign posts = site.posts %}
   {% endif %}
 
-<section id="grid" class="row flex-grid">
-    <article class="post-list">
-        <div>
   {%- if posts.size > 0 -%}
     {%- if page.list_title -%}
+<section id="grid" class="row flex-grid">
+  <article class="post-list">
+    <div>
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -36,10 +36,10 @@ layout: default
           <blockquote>{{ post.excerpt }}</blockquote>
         {%- endif -%}
       </li>
+      </div>
         </article>
               {%- endfor -%}
-              </div>
-                 </section>
+              </section>
     {% if site.paginate %}
       <div class="pager">
         <ul class="pagination">
