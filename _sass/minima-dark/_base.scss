@@ -295,5 +295,6 @@ table {
 }
 
 ::selection {
-  background: $highlight;
+  background: $highlight-background;
+  color: $highlight;
 }
