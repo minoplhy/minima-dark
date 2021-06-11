@@ -293,3 +293,7 @@ table {
             -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 }
+
+::selection {
+  background: var(--highlight-color);
+}
