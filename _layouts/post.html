@@ -15,13 +15,13 @@ layout: default
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <h3><time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"></h3>
+      <h3>Published : <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished"></h3>
         {{ page.date | date: date_format }} /// {{ minutes }} minute read
       </time>
       {%- if page.modified_date -%}
         ~ 
         {%- assign mdate = page.modified_date | date_to_xmlschema -%}
-        <h3><time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified"></h3>
+        <h3>Modified : <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified"></h3>
           {{ mdate | date: date_format }}
         </time>
       {%- endif -%}
